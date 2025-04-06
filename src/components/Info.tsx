@@ -46,7 +46,7 @@ const Info = () => {
         <CardContent>
           <CardDescription className="text-sm">
             This app connects to a Python Flask backend with two powerful endpoints
-            for image analysis and similar image search.
+            for image analysis and similar image search. Backend code included!
           </CardDescription>
         </CardContent>
       </Card>

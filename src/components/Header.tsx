@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Image } from 'lucide-react';
+import { Image, Github } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Header = () => {
   return (
@@ -19,12 +20,21 @@ const Header = () => {
           >
             Documentation
           </a>
-          <a 
-            href="#" 
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="gap-2"
+            onClick={() => window.open('https://github.com/your-repo/imageai-flask-app', '_blank')}
           >
+            <Github className="h-4 w-4" />
             GitHub
-          </a>
+          </Button>
+          <Button 
+            size="sm"
+            onClick={() => window.open('http://localhost:5000/health', '_blank')}
+          >
+            API Status
+          </Button>
         </nav>
       </div>
     </header>
